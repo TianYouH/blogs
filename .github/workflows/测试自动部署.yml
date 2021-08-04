@@ -34,9 +34,10 @@ jobs:
       with:
         node-version: 10.x
     # npm install
-    - name: npm install and build
-      run: |
-        npm install
-        npm run update
+    - name: Build and Deploy
+      uses: JamesIves/github-pages-deploy-action@master
       env:
-        CI: true
+        ACCESS_TOKEN: ${{ secrets.HUANG }}
+        BRANCH: master
+        FOLDER: build
+        BUILD_SCRIPT: npm install && npm run update
