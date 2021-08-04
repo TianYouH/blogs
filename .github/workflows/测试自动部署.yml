@@ -20,15 +20,13 @@ jobs:
 
     # 步骤表示将作为作业的一部分执行的任务序列
     steps:
-      # 在$GITHUB_WORKSPACE下签出您的存储库，以便您的作业可以访问它
-      - uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@master
 
-      # 使用运行器shell运行单个命令
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # 使用运行器shell运行一组命令
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+    - name: Build and Deploy
+      uses: JamesIves/github-pages-deploy-action@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.HUANG }}
+        BRANCH: master
+        FOLDER: build
+        BUILD_SCRIPT: npm install && npm run update
