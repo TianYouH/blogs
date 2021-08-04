@@ -21,7 +21,7 @@ jobs:
     # 步骤表示将作为作业的一部分执行的任务序列
     steps:
     # 切代码到 runner
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
       with:
         submodules: true
     # 下载 git submodule
@@ -38,6 +38,6 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@master
       env:
         ACCESS_TOKEN: ${{ secrets.HUANG }}
-        BRANCH: master
+        BRANCH: gh-pages
         FOLDER: build
         BUILD_SCRIPT: npm install && npm run update
