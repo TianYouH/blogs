@@ -123,7 +123,9 @@ module.exports = {
         ],
 
         "/redis/": [
-            ""
+            "",
+            "基础使用",
+            "node连接"
         ],
 
         "/test/": [
