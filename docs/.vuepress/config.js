@@ -68,7 +68,8 @@ module.exports = {
         ],
         "/web/react/": [
             "",
-            "环境构建"
+            "环境构建",
+            "Nextjs文档"
         ],
         "/web/webpack/": [
             "",
