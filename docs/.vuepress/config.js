@@ -40,10 +40,11 @@ module.exports = {
         {
             text: '开发',
             items: [
-                { text: '测试', link: '/test/' },
-                { text: 'GIT', link: '/git/' },
-                { text: 'HTTP', link: '/http/' },
-                { text: 'Linux', link: '/linux/' },
+                { text: '测试', link: '/dev/test/' },
+                { text: 'GIT', link: '/dev/git/' },
+                { text: 'HTTP', link: '/dev/http/' },
+                { text: 'Linux', link: '/dev/linux/' },
+                { text: 'VSCode', link: '/dev/vscode/' },
             ]
         },
       ],
