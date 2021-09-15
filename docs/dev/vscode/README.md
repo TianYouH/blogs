@@ -2,8 +2,8 @@
 
 ## C/C++环境配置
 
-1. 安装插件 https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools
-2. 下载安装 C/C++ 编译库 https://sourceforge.net/projects/mingw-w64/files/
+1. 安装[插件](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
+2. 下载安装 C/C++ [编译库](https://sourceforge.net/projects/mingw-w64/files/)
    - x86_64-posix-seh 下载这个压缩包，解压到期望目录
 3. 配置环境变量 Path 增加步骤二解压包的 bin 目录
    - 示例：C:\Program Files\mingw64\bin
