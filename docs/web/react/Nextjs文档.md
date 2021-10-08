@@ -98,4 +98,63 @@ export default Post
 
 ## 路由映射
 
+单页前端映射
 
+通过 Link 标签 上的 as 属性 映射
+
+```jsx
+import Link from 'next/link'
+import { Button } from 'antd';
+
+function ActiveLink() {
+  return (
+    <div>
+      <Link href="/router/dynamic-parameters?id=666" as="huang" >
+        <Button >
+          动态映射 测试
+        </Button>
+      </Link>
+    </div>
+  )
+}
+export default ActiveLink
+```
+
+通过Router映射
+
+```jsx
+router.push({
+    pathname: '/router/dynamic-parameters',
+    query: { id: '12345' }
+  }, 
+  'nihao' // 动态映射测试
+)
+```
+
+> 提示: 上述路由映射方式 会导致在映射页面刷新导致404 错误;
+
+后端映射
+
+```js
+// server.js
+const router = new Router();
+
+// 匹配映射路由
+router.get('/huang/:id',async (ctx) => {
+  const id = ctx.params.id
+  await handle(ctx.req, ctx.res, {
+    pathname: '/router/dynamic-parameters', // 映射目标页面
+    query: { id }
+  })
+  ctx.respond = false;
+})
+
+server.use(router.routes());
+```
+对应路由页面需要配置 getInitialProps 保证后端映射 query 数据同步(不然会丢失)
+```jsx
+DynamicParameters.getInitialProps = async (res) => {
+  const id = res.query.id
+  return { id }
+};
+```
