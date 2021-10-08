@@ -10,7 +10,7 @@
   - 📄_app.js
 - 📄server.js
 
-## 页面跳转
+## [页面跳转](https://nextjs-cn.com/docs/api-reference/next/link)
 
 - link 组件
   - 进行前端路由跳转
@@ -58,3 +58,44 @@ function ActiveLink({ children, href }) {
 
 export default ActiveLink
 ```
+
+## [动态路由](https://nextjs-cn.com/docs/routing/dynamic-routes)
+ 
+nextjs中实现路由的信息附带，只能通过query，不能使用params。
+
+发起query请求
+```jsx
+// router.push('/router/dynamic-parameters?id=456')
+router.push({
+  pathname: '/router/dynamic-parameters',
+  query: {
+    id: '12345'
+  }
+})
+```
+
+获取动态参数
+```jsx
+import { withRouter } from 'next/router'
+import Comp from '../components/comp'
+
+const A = ({ router }) => <Comp>{router.query.id}</Comp>
+
+export default withRouter(A)
+```
+```jsx
+import { useRouter } from 'next/router'
+
+const Post = () => {
+  const router = useRouter()
+  const { pid } = router.query
+
+  return <p>Post: {pid}</p>
+}
+
+export default Post
+```
+
+## 路由映射
+
+

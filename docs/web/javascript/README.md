@@ -104,7 +104,7 @@ ECMA只规定语法规则，即我们代码的书写规范，不规定如何实�
 
 2. 类型判断-instanceof
 
-顺着隐式原型向上找对应到的小时原型
+顺着隐式原型向上找对应到的显式原型
 
 ```js
 xialuo instanceof Student // true
