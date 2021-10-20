@@ -158,3 +158,23 @@ DynamicParameters.getInitialProps = async (res) => {
   return { id }
 };
 ```
+
+## 路由变化的钩子 router.events
+
+- routeChangeStart(url, { shallow })
+  - 当路由开始改变时触发
+- routeChangeComplete(url, { shallow })
+  - 当路由完全改变时触发
+- routeChangeError(err, url, { shallow })
+  - 当更改路由时出现错误或路由加载被取消时触发
+- beforeHistoryChange(url, { shallow })
+  - 在更改浏览器历史记录之前触发
+
+- hashChangeStart(url, { shallow })
+  - 当哈希值改变而页面不变时触发
+- hashChangeComplete(url, { shallow })
+  - 当哈希已经改变，但页面没有改变时
+
+[使用示例-1](https://www.nextjs.cn/docs/api-reference/next/router#routerevents)
+[使用示例-2](https://github.com/TianYouH/react-nextjs/blob/master/pages/_app.js)
+
