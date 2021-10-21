@@ -1,6 +1,4 @@
-# Nextjs 文档
-
-官网：https://www.nextjs.cn/
+# [Nextjs 文档](https://www.nextjs.cn/)
 
 ## 目录结构
 
@@ -178,3 +176,59 @@ DynamicParameters.getInitialProps = async (res) => {
 [使用示例-1](https://www.nextjs.cn/docs/api-reference/next/router#routerevents)
 [使用示例-2](https://github.com/TianYouH/react-nextjs/blob/master/pages/_app.js)
 
+## [getInitialProps](https://www.nextjs.cn/docs/api-reference/data-fetching/getInitialProps)
+
+获取服务端预加载数据，同步当前页面刷新后query数据
+
+推荐使用
+- getStaticProps
+- getServerSideProps
+    - 这些新的获取数据的方法使你可以在静态生成（static generation）和服务器端渲染（server-side rendering）之间进行精细控制。更多信息请参考 页面（Pages） 和 数据获取 文档
+
+## [自定义App](https://www.nextjs.cn/docs/advanced-features/custom-app)
+
+- 固定Layout
+- 保持一些公用的状态
+- 给页面传入一些自定义数据
+- 自定义错误处理
+
+```js
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.less
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
+
+
+function MyApp({ Component, pageProps }) {
+  const router = useRouter()
+
+  useEffect(() => {
+    const handleRouteChange = (url, { shallow }) => {
+      console.log(
+        `App is changing to ${url} ${
+          shallow ? 'with' : 'without'
+        } shallow routing`
+      )
+    }
+
+    router.events.on('routeChangeStart', handleRouteChange)
+    router.events.on('routeChangeComplete', handleRouteChange)
+    router.events.on('beforeHistoryChange', handleRouteChange)
+    router.events.on('hashChangeStart', handleRouteChange)
+    router.events.on('hashChangeComplete', handleRouteChange)
+
+    // If the component is unmounted, unsubscribe
+    // from the event with the `off` method:
+    return () => {
+      router.events.off('routeChangeStart', handleRouteChange)
+      router.events.off('routeChangeComplete', handleRouteChange)
+      router.events.off('beforeHistoryChange', handleRouteChange)
+      router.events.off('hashChangeStart', handleRouteChange)
+      router.events.off('hashChangeComplete', handleRouteChange)
+    }
+  }, [])
+
+  return <Component {...pageProps} />
+}
+
+export default MyApp
+```
