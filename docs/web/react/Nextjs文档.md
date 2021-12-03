@@ -232,3 +232,9 @@ function MyApp({ Component, pageProps }) {
 
 export default MyApp
 ```
+
+[自定义document](https://www.nextjs.cn/docs/advanced-features/custom-document)
+
+- 只有在服务端渲染的时候才会被调用
+- 用来修改服务端渲染文档内容
+- 一般用来配合第三方css-in-js方案
