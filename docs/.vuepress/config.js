@@ -134,9 +134,10 @@ module.exports = {
             "",
             "Chaijs"
         ],
-        "/git/": [
+        "/dev/git/": [
             "",
-            "Git-Commit-message和Change-log验证配置",
+            "Git规范提交库和Git-Change-log生成库",
+            "Git-钩子拦截配置",
         ],
         "/http/": [
             ""

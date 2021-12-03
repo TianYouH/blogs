@@ -1,4 +1,4 @@
-# Git Commit message 和 Change log 验证配置
+# Git规范提交库和Git-Change-log生成库
 
 
 
@@ -7,8 +7,6 @@
 
 
 ## 1. *Commitizen* Commit message 格式工具
-
-
 
 用来生成符合格式的 Commit message。
 
@@ -32,73 +30,7 @@ commitizen init cz-conventional-changelog --yarn --dev --exact
 
 以后，凡是用到`git commit`命令，一律改为使用`git cz`。这时，就会出现选项.
 
-
-
-## 2. *Husky* Git hooks 工具
-
-
-
-husky 可以防止使用 Git hooks 的一些不好的 commit 或者 push。
-
-安装 husky v4.
-
-```json
-npm install husky --save-dev
-// package.json
-{
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test",
-      "pre-push": "npm test",
-      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
-      "...": "..."
-    }
-  }
-}
-```
-
-
-
-## 3. *commitlint* Commit message validate
-
-用于检查项目的 Commit message 是否符合格式。
-
-安装
-
-```bash
-npm install -g @commitlint/cli @commitlint/config-conventional
-```
-
-配置
-
-```bash
-echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
-```
-
-测试
-
-```bash
-echo 'foo: bar' | commitlint
-```
-
-配置进husky工具
-
-```js
-// package.json
-{
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
-    }
-  }
-}
-```
-
-
-
-## 4. conventional-changelog-cli 根据 Commit 生成日志
-
-
+## 2. conventional-changelog-cli 根据 Commit 生成日志
 
 代码
 
