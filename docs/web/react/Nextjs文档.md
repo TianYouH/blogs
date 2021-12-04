@@ -185,7 +185,9 @@ DynamicParameters.getInitialProps = async (res) => {
 - getServerSideProps
     - 这些新的获取数据的方法使你可以在静态生成（static generation）和服务器端渲染（server-side rendering）之间进行精细控制。更多信息请参考 页面（Pages） 和 数据获取 文档
 
-## [自定义App](https://www.nextjs.cn/docs/advanced-features/custom-app)
+## 自定义
+
+### [自定义App](https://www.nextjs.cn/docs/advanced-features/custom-app)
 
 - 固定Layout
 - 保持一些公用的状态
@@ -233,8 +235,48 @@ function MyApp({ Component, pageProps }) {
 export default MyApp
 ```
 
-[自定义document](https://www.nextjs.cn/docs/advanced-features/custom-document)
+### [自定义document](https://www.nextjs.cn/docs/advanced-features/custom-document)
 
 - 只有在服务端渲染的时候才会被调用
 - 用来修改服务端渲染文档内容
 - 一般用来配合第三方css-in-js方案
+
+>   不推荐在document中定义title `<title>我的 App</title>`,可以通过在页面中 import Head from 'next/head' 方式定义;
+
+## nextjs 样式定义
+
+默认支持 [style-jsx](https://www.npmjs.com/package/styled-jsx)
+
+```jsx
+const color = "blue"
+function App() {
+  return (
+    <>
+      <div>
+        App 页面信息
+        <p>App p 11111</p>
+        <span className="sp glo" >App span 22222</span>
+      </div>
+      {/* 正常局部测试 */}
+      <style jsx>{`
+        div {
+          color: red;
+        }
+        p {
+          color: ${color};
+        }
+        .sp {
+          color: yellow
+        }
+      `}</style>
+      {/* 全局特性测试,当该组件移除全局效果也会失效 */}
+      <style jsx global>{`
+        .glo {
+          color: green
+        }
+      `}</style>
+    </>
+  );
+}
+```
+
