@@ -139,8 +139,9 @@ module.exports = {
             "Git规范提交库和Git-Change-log生成库",
             "Git-钩子拦截配置",
         ],
-        "/http/": [
-            ""
+        "/dev/http/": [
+            "",
+            "HTTP状态码"
         ],
         "/linux/": [
             ""
