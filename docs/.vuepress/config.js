@@ -40,6 +40,7 @@ module.exports = {
         {
             text: '开发',
             items: [
+                { text: '调试', link: '/dev/debug/' },
                 { text: '测试', link: '/dev/test/' },
                 { text: 'GIT', link: '/dev/git/' },
                 { text: 'HTTP', link: '/dev/http/' },
@@ -129,8 +130,10 @@ module.exports = {
             "基础使用",
             "node连接"
         ],
-
-        "/test/": [
+        "/dev/debug/": [
+            ""
+        ],
+        "/dev/test/": [
             "",
             "Chaijs"
         ],
@@ -143,7 +146,7 @@ module.exports = {
             "",
             "HTTP状态码"
         ],
-        "/linux/": [
+        "/dev/linux/": [
             ""
         ]
       }
