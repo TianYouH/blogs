@@ -131,7 +131,8 @@ module.exports = {
             "node连接"
         ],
         "/dev/debug/": [
-            ""
+            "",
+            "whistle"
         ],
         "/dev/test/": [
             "",
