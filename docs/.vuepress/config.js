@@ -34,7 +34,8 @@ module.exports = {
         {
             text: '数据',
             items: [
-                { text: 'Redis', link: '/redis/' }
+                { text: 'Redis', link: '/data/redis/' },
+                { text: 'Algorithm', link: '/data/algorithm/' }
             ]
         },
         {
@@ -127,10 +128,13 @@ module.exports = {
             ""
         ],
 
-        "/redis/": [
+        "/data/redis/": [
             "",
             "基础使用",
             "node连接"
+        ],
+        "/data/algorithm/": [
+            "",
         ],
         "/dev/debug/": [
             "",
