@@ -46,6 +46,7 @@ module.exports = {
                 { text: 'HTTP', link: '/dev/http/' },
                 { text: 'Linux', link: '/dev/linux/' },
                 { text: 'VSCode', link: '/dev/vscode/' },
+                { text: 'Mock', link: '/dev/mock/' },
             ]
         },
       ],
@@ -153,6 +154,10 @@ module.exports = {
         ],
         "/dev/vscode/": [
             ""
+        ],
+        "/dev/mock/": [
+            "",
+            "服务端Mock配置"
         ]
       }
     }
