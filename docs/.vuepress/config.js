@@ -80,6 +80,7 @@ module.exports = {
             "Loader",
             "Plugins",
             "CodeSplitting",
+            "vue-cli"
         ],
         "/web/designMode/": [
             "",
@@ -140,8 +141,8 @@ module.exports = {
         ],
         "/dev/git/": [
             "",
-            "Git规范提交库和Git-Change-log生成库",
             "Git-钩子拦截配置",
+            "Git规范提交库和Git-Change-log生成库",
         ],
         "/dev/http/": [
             "",
