@@ -280,3 +280,23 @@ function App() {
 }
 ```
 
+## LazyLoading
+
+- 异步加载模块
+- 异步加载组件
+
+```jsx
+// 异步引入 moment 示例
+App.getInitialProps = async (ctx) => {
+  const moment = await import("moment");
+  const promise = new Promise(resolve => {
+    setTimeout(() => {
+      resolve({
+        name: "黄长生",
+        time: moment.default(Date.now() - (1000*60*60)).fromNow()
+      })
+    }, 1000);
+  })
+  return promise;
+};
+```
