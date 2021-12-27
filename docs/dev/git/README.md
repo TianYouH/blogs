@@ -53,7 +53,9 @@
 - git rebase
 
       [branch]                          # 将当前所在分支工作移动到目标分支
-      -i [target-node]                  # 重构选中提交节点（顺序、移除、合并）
+      -i [target-node]                  # 重构选中提交节点（顺序、移除、合并）详情见示例区
+
+> [merge和rebase的区别](https://www.cnblogs.com/xueweihan/p/5743327.html)
 
 ### 撤销变更
 
@@ -110,6 +112,7 @@
 
 ### 示例区
 
+git rebase
 ```bash
 # -i [target-node] 示例：
 
