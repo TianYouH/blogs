@@ -1,5 +1,29 @@
 # [Nextjs 文档](https://www.nextjs.cn/)
 
+## 渲染流程
+
+### 客户端请求
+
+1. 开始
+2. 浏览器发起/page请求
+3. koa接收到请求，并调用nextjs
+4. nextjs开始渲染
+5. 调用app的getInitialProps
+6. 调用页面的getInitialProps
+7. 渲染出最终HTML
+8. 返回给浏览器，渲染
+9. 结束
+
+### 客户端路由跳转
+
+1. 开始
+2. 点击链接按钮
+3. 异步加载页面的组件js
+4. 调用页面的getInitialProps
+5. 数据返回，路由变化
+6. 渲染新的页面
+7. 结束
+
 ## 目录结构
 
 - 📁.next
@@ -242,6 +266,8 @@ export default MyApp
 - 一般用来配合第三方css-in-js方案
 
 >   不推荐在document中定义title `<title>我的 App</title>`,可以通过在页面中 import Head from 'next/head' 方式定义;
+
+### [ngxt.config.js](https://www.nextjs.cn/docs/api-reference/next.config.js/introduction)
 
 ## nextjs 样式定义
 
