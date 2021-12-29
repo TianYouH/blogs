@@ -20,12 +20,44 @@
       向上移动多个提交记录，如 ~3
       git checkout main~3; git checkout HEAD~5;
 
-### 基础命令
+### 创建仓库命令
+
+- git init
+
+      初始化仓库
+
+- git clone
+
+      拷贝一份远程仓库，也就是下载一个项目。
+
+### 提交与修改
+
+- git add
+  
+      提交暂存区到仓库区
+
+- git status
+  
+      查看仓库当前的状态，显示有变更的文件。
+
+- git diff
+  
+      比较文件的不同，即暂存区和工作区的差异。
 
 - git commit
   
       -m [message]                      # 提交暂存区到仓库区
       [file1] [file2] ... -m [message]  # 提交暂存区的指定文件到仓库区
+
+- git rm
+  
+      删除工作区文件
+
+- git mv
+  
+      移动或重命名工作区文件。
+
+### 基础命令
 
 - git branch
       
@@ -69,6 +101,34 @@
 
       [target-node]                     # 创建一次新的提交，覆盖目标节点之后的提交
 
+### 提交日志
+
+- git log
+
+      查看历史提交记录
+
+- git blame
+
+      [file]                            # 以列表形式查看指定文件的历史修改记录
+
+### 远程操作
+
+- git remote
+
+      远程仓库操作;
+
+- git fetch
+
+      将本地仓库中的远程分支更新成了远程仓库相应分支最新的状态;
+
+- git pull
+
+      git pull 是 git fetch 和 git merge 的缩写
+
+- git push
+
+      提交 本地库记录 到远程仓库，并同步更新本地远程库；
+
 ### 其它命令
 
 - git cherry-pick
@@ -93,23 +153,7 @@
       list                              # 查看现有stash
       drop [stash-name]                 # 移除stash
       clear                             # 删除所有缓存的stash
-
-### 远程操作
-
-- git clone
-
-- git fetch
-
-> 将本地仓库中的远程分支更新成了远程仓库相应分支最新的状态;
-
-- git pull
-
-> git pull 是 git fetch 和 git merge 的缩写
-
-- git push
-
-> 提交 本地库记录 到远程仓库，并同步更新本地远程库；
-
+      
 ### 示例区
 
 git rebase
