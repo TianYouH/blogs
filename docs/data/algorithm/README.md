@@ -51,7 +51,8 @@
 |10^6|10^10|10^13|0.001|
 
 对应不同复杂度的函数，随着输入数据n规模的增大，操作增长数是不同的；
-![时间复杂度](/blogs/image/data/algorithm/1.png)
+<!-- ![时间复杂度](/blogs/image/data/algorithm/1.png) -->
+<img :src="$withBase('/image/data/algorithm/1.png')" alt="时间复杂度">
 
 [O(1), O(n), O(logn), O(nlogn) 的区别](https://blog.csdn.net/ted_cs/article/details/82881831)
 

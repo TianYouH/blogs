@@ -4,7 +4,8 @@
 
 流程图
 
-![示例-1](/blogs/image/web/knowledge/示例-1.png)
+<!-- ![示例-1](/blogs/image/web/knowledge/示例-1.png) -->
+<img :src="$withBase('/image/web/knowledge/示例-1.png')" alt="示例-1">
 
 Oauth的实现流程
 
