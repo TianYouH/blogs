@@ -85,6 +85,7 @@
 - git rebase
 
       [branch]                          # 将当前所在分支工作移动到目标分支
+      [branch] [target-branch]          # 将target分支，移动到指定分支,并切换到target分支
       -i [target-node]                  # 重构选中提交节点（顺序、移除、合并）详情见示例区
 
 > [merge和rebase的区别](https://www.cnblogs.com/xueweihan/p/5743327.html)
