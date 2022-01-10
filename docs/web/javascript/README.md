@@ -1,5 +1,10 @@
 # Javascript
 
+JavaScript是一种专为与网页交互而设计的脚本语言，由下列三个不同的部分组成：
+- ECAMScript，由ECAM-262定义，提供核心语言功能；
+- 文档对象模型（DOM），提供访问和操作网页内容的方法和接口；
+- 浏览器对象模型（BOM），提供与浏览器交互的方法和接口；
+
 ## 变量类型和计算
 
 1. 值类型
@@ -80,58 +85,6 @@ console.log(10 && 0); // 0
 console.log("" || "abc"); // 'abc'
 console.log(!window.abc); // true
 ```
-
-## 原型和原型链
-
-[测试地址](https://tianyouh.github.io/summarize/Javascript/1/)
-
-1. class
-
-```text
-constructor
-属性
-方法
-
-继承：
-extends
-super
-扩展或重写方法
-
-class是ES6语法规范，由ECMA委员会发布
-ECMA只规定语法规则，即我们代码的书写规范，不规定如何实现
-主要实现方式都是V8引擎的实现方式，也是主流的
-```
-
-2. 类型判断-instanceof
-
-顺着隐式原型向上找对应到的显式原型
-
-```js
-xialuo instanceof Student // true
-xialuo instanceof People // true
-xialuo instanceof Object // true
-[] instanceof Array // true
-[] instanceof Object // true
-{} instanceof Object // true
-```
-
-3. 原型关系
-
-```text
-每个class都有显示原型prototype
-每个实例都有隐式原型_proto_
-实例的_proto_指向对应class的prototype
-
-基于原型的执行规则：
-获取属性xialuo.name 或执行方法xialuo.sayhi() 时
-先在自身属性和方法寻找
-如果找不到则自动去__proto__中查找
-```
-
-<!-- ![图例](/blogs/image/web/javascript/原型链.jpg) -->
-<img :src="$withBase('/image/web/javascript/原型链.jpg')" alt="图例">
-
-4. 手写简易 jQuery 考虑插件和扩展性 [链接](/web/knowledge/常用手写函数.html#bind-手写)
 
 ## 作用域和闭包
 

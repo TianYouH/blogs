@@ -1,7 +1,7 @@
 module.exports = {
   base: "/blogs/",
   title: "你好世界",
-  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+  head: [["link", { rel: "icon", href: "/blogs/favicon.ico" }]],
   description: "这是我的博客",
   themeConfig: {
     lastUpdatedText: "最后更新时间", // string | boolean
@@ -58,7 +58,11 @@ module.exports = {
         {
           text: "JavaScript",
           collapsible: true,
-          children: ["/web/javascript/README.md"],
+          children: [
+            "/web/javascript/README.md",
+            "/web/javascript/原型到原型链.md",
+            "/web/javascript/继承的多种方式和优缺点.md",
+          ],
         },
       ],
       "/web/css/": [
