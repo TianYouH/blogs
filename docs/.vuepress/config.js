@@ -62,6 +62,7 @@ module.exports = {
             "/web/javascript/README.md",
             "/web/javascript/原型到原型链.md",
             "/web/javascript/继承的多种方式和优缺点.md",
+            "/web/javascript/作用域和闭包.md",
           ],
         },
       ],
