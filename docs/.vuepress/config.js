@@ -95,6 +95,7 @@ module.exports = {
             "/web/react/README.md",
             "/web/react/环境构建.md",
             "/web/react/Nextjs文档.md",
+            "/web/react/Hook.md",
           ],
         },
       ],
