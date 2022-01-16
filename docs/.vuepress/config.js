@@ -96,6 +96,7 @@ module.exports = {
             "/web/react/环境构建.md",
             "/web/react/Nextjs文档.md",
             "/web/react/Hook.md",
+            "/web/react/Redux.md",
           ],
         },
       ],
