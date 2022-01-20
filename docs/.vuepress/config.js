@@ -226,6 +226,7 @@ module.exports = {
               "/dev/git/README.md",
               "/dev/git/Git-钩子拦截配置.md",
               "/dev/git/Git规范提交库和Git-Change-log生成库.md",
+              "/dev/git/gitignore无效解决.md",
             ],
         },
       ],
