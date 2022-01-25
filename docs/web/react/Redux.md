@@ -194,3 +194,35 @@ function addAsync(num) {
   }
 }
 ```
+
+### Redux Devtools
+
+浏览器 redux 调试工具
+
+1. 下载对应浏览器插件
+
+[Edge 下载](https://microsoftedge.microsoft.com/addons/search/redux%20devtools)
+
+2. 项目安装插件依赖包
+
+`yarn add redux-devtools-extension`
+
+3. 项目绑定工具插件
+
+```js
+// store.js
+import { composeWithDevTools } from 'redux-devtools-extension' 
+
+// ***************************************
+
+const store = createStore(
+  allReducers,
+  {
+    counter: initialState,
+    user: userInitialState,
+  },
+  composeWithDevTools(applyMiddleware(ReduxThunk)) // 使用中间件
+);
+```
+
+4. 完成配置
