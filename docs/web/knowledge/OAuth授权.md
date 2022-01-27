@@ -55,6 +55,6 @@ Oauth的安全性如何保证
 3. 选中左侧 OAuth Apps栏，点击注册一个新的应用
 <img :src="$withBase('/image/web/knowledge/githubOauth申请3.png')" alt="示例">
 
-4. 
+4. 你好6
 
 :::

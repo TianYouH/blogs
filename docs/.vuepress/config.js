@@ -41,6 +41,7 @@ module.exports = {
           { text: "HTTP", link: "/dev/http/" },
           { text: "Linux", link: "/dev/linux/" },
           { text: "VSCode", link: "/dev/vscode/" },
+          { text: "GitHub", link: "/dev/github/" },
           { text: "Mock", link: "/dev/mock/" },
         ],
       },
@@ -253,6 +254,16 @@ module.exports = {
           text: "Vscode",
           collapsible: true,
           children: ["/dev/vscode/README.md"],
+        },
+      ],
+      "/dev/github/": [
+        {
+          text: "GitHub",
+          collapsible: true,
+          children: [
+            "/dev/github/README.md",
+            "/dev/github/同步GitHub和Gitee.md",
+          ],
         },
       ],
       "/dev/mock/": [
