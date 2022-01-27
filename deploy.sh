@@ -9,8 +9,8 @@ npm run docs:build
 # 进入生成的文件夹
 cd docs/.vuepress/dist
 
-# 如果是发布到自定义域名
-# echo 'www.example.com' > CNAME
+# 拷贝目录和文件 不拷贝gh-pages将无法执行自动化
+cp -r ../../../.github ./
 
 git init
 git add -A
