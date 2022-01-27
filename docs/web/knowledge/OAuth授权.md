@@ -46,7 +46,7 @@ Oauth的安全性如何保证
 2022年1月27日
 
 ::: details 示例
-1. 点击 github首页 右上角头像 打开下拉选项 进入Settings配置页
+1. 点击 github首页 右上角头像 打开下拉 选项 进入Settings配置页
 <img :src="$withBase('/image/web/knowledge/githubOauth申请1.png')" alt="示例">
 
 2. 点击左侧侧边栏进入 Developer settings页
