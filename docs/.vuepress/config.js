@@ -239,6 +239,7 @@ module.exports = {
           children: [
               "/dev/http/README.md",
               "/dev/http/HTTP状态码.md",
+              "/dev/http/域名后缀记录.md",
             ],
         },
       ],
