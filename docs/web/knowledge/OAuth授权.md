@@ -45,16 +45,14 @@ Oauth的安全性如何保证
 
 2022年1月27日
 
-::: details 示例
-1. 点击 github首页 右上角头像 打开下拉 选项 进入Settings配置页
-<img :src="$withBase('/image/web/knowledge/githubOauth申请1.png')" alt="示例">
+"github首页" -> "右上角头像(下拉)" -> "Settings" -> "左侧侧边栏Developer settings" -> "左侧 OAuth Apps" -> "Register a new application"
 
-2. 点击左侧侧边栏进入 Developer settings页
-<img :src="$withBase('/image/web/knowledge/githubOauth申请2.png')" alt="示例">
+字段说明： 
+| 字段 | 说明 | 示例 |
+| - | - | - |
+| Application name | 应用名称 | nextjsApp |
+| Homepage URL | 应用主页地址 | http://127.0.0.1:3000/ |
+| Application description | 应用描述 |  |
+| Authorization callback URL | 授权回调地址 | http://127.0.0.1:3000/auth |
 
-3. 选中左侧 OAuth Apps栏，点击注册一个新的应用
-<img :src="$withBase('/image/web/knowledge/githubOauth申请3.png')" alt="示例">
 
-4. 你好6
-
-:::
