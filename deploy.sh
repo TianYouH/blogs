@@ -11,6 +11,7 @@ cd docs/.vuepress/dist
 
 # 拷贝目录和文件 不拷贝gh-pages将无法执行自动化
 cp -r ../../../.github ./
+cp -r ../../../CNAME ./
 
 git init
 git add -A

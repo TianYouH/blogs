@@ -1,7 +1,7 @@
 module.exports = {
-  base: "/blogs/",
+  base: "/",
   title: "你好世界",
-  head: [["link", { rel: "icon", href: "/blogs/favicon.ico" }]],
+  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   description: "这是我的博客",
   themeConfig: {
     lastUpdatedText: "最后更新时间", // string | boolean
