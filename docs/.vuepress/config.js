@@ -264,6 +264,7 @@ module.exports = {
           children: [
             "/dev/github/README.md",
             "/dev/github/同步GitHub和Gitee.md",
+            "/dev/github/个人域名解析跳转GitPage.md",
           ],
         },
       ],
