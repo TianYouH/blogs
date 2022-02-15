@@ -66,7 +66,8 @@ npm install
 
 #### 行高亮
 
-```ts{1,6-8}
+```ts{2,6-8}
+// ts{2,6-8}
 import type { UserConfig } from "@vuepress/cli";
 
 export const config: UserConfig = {
@@ -86,6 +87,7 @@ const line3 = "This is line 3";
 ```
 
 ```ts:no-line-numbers
+// ts:no-line-numbers
 // 行号被禁用，行号默认是开启的
 const line2 = "This is line 2";
 const line3 = "This is line 3";
