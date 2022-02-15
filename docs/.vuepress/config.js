@@ -85,7 +85,10 @@ module.exports = {
         {
           text: "WebApi",
           collapsible: true,
-          children: ["/web/webapi/README.md"],
+          children: [
+            "/web/webapi/README.md",
+            "/web/webapi/Ajax.md"
+          ],
         },
       ],
       "/web/react/": [
