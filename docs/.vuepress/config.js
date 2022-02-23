@@ -38,7 +38,7 @@ module.exports = {
           { text: "调试", link: "/dev/debug/" },
           { text: "测试", link: "/dev/test/" },
           { text: "GIT", link: "/dev/git/" },
-          { text: "HTTP", link: "/dev/http/" },
+          { text: "Network", link: "/dev/network/" },
           { text: "Linux", link: "/dev/linux/" },
           { text: "VSCode", link: "/dev/vscode/" },
           { text: "GitHub", link: "/dev/github/" },
@@ -235,14 +235,16 @@ module.exports = {
             ],
         },
       ],
-      "/dev/http/": [
+      "/dev/network/": [
         {
-          text: "Http",
+          text: "Network",
           collapsible: true,
           children: [
-              "/dev/http/README.md",
-              "/dev/http/HTTP状态码.md",
-              "/dev/http/域名后缀记录.md",
+              "/dev/network/README.md",
+              "/dev/network/OSI.md",
+              "/dev/network/HTTP.md",
+              "/dev/network/HTTP状态码.md",
+              "/dev/network/域名后缀记录.md",
             ],
         },
       ],
