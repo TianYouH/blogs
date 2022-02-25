@@ -11,7 +11,6 @@ module.exports = {
         text: "前端",
         children: [
           { text: "入门", link: "/web/base/" },
-          { text: "WebApi", link: "/web/webapi/" },
           { text: "Webpack", link: "/web/webpack/" },
           { text: "React", link: "/web/react/" },
           { text: "设计模式", link: "/web/designMode/" },
@@ -74,14 +73,12 @@ module.exports = {
             "/web/base/css/动画渐变.md",
           ],
         },
-      ],
-      "/web/webapi/": [
         {
           text: "WebApi",
           collapsible: true,
           children: [
-            "/web/webapi/README.md",
-            "/web/webapi/Ajax.md"
+            "/web/base/webapi/README.md",
+            "/web/base/webapi/Ajax.md"
           ],
         },
       ],
