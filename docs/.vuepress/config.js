@@ -243,6 +243,7 @@ module.exports = {
               "/dev/network/README.md",
               "/dev/network/OSI.md",
               "/dev/network/HTTP.md",
+              "/dev/network/HTTPS.md",
               "/dev/network/HTTP状态码.md",
               "/dev/network/域名后缀记录.md",
             ],

@@ -4,6 +4,8 @@ HTTP (Hypertext transfer protocol) 超文本传输协议
 
 由欧洲核子研究委员会CERN的英国工程师 Tim Berners-Lee v发明的，同时，他也是WWW的发明人，最初的主要是用于传递通过HTML封装过的数据。
 
+## 发展史
+
 - HTTP0.9
   - 发布时间：1991年
   - 相关描述：协议简单到极点，请求时，不支持请求头，只支持 GET 方法，没了。
