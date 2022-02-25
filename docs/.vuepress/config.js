@@ -10,16 +10,14 @@ module.exports = {
       {
         text: "前端",
         children: [
-          { text: "HTML", link: "/web/html/" },
-          { text: "Javascript", link: "/web/javascript/" },
-          { text: "CSS", link: "/web/css/" },
+          { text: "入门", link: "/web/base/" },
           { text: "WebApi", link: "/web/webapi/" },
           { text: "Webpack", link: "/web/webpack/" },
           { text: "React", link: "/web/react/" },
           { text: "设计模式", link: "/web/designMode/" },
           { text: "知识点", link: "/web/knowledge/" },
           { text: "面试题", link: "/web/issue/" },
-        ],
+        ]
       },
       {
         text: "服务",
@@ -48,36 +46,32 @@ module.exports = {
     ],
     sidebarDepth: 3,
     sidebar: {
-      "/web/html/": [
+      "/web/base/": [
         {
           text: "HTML",
           collapsible: true,
-          children: ["/web/html/README.md"],
+          children: ["/web/base/html/README.md"],
         },
-      ],
-      "/web/javascript/": [
         {
           text: "JavaScript",
           collapsible: true,
           children: [
-            "/web/javascript/README.md",
-            "/web/javascript/原型到原型链.md",
-            "/web/javascript/继承的多种方式和优缺点.md",
-            "/web/javascript/作用域和闭包.md",
+            "/web/base/javascript/README.md",
+            "/web/base/javascript/原型到原型链.md",
+            "/web/base/javascript/继承的多种方式和优缺点.md",
+            "/web/base/javascript/作用域和闭包.md",
           ],
         },
-      ],
-      "/web/css/": [
         {
           text: "CSS",
           collapsible: true,
           children: [
-            "/web/css/README.md",
-            "/web/css/布局.md",
-            "/web/css/定位.md",
-            "/web/css/图文样式.md",
-            "/web/css/移动端响应式.md",
-            "/web/css/动画渐变.md",
+            "/web/base/css/README.md",
+            "/web/base/css/布局.md",
+            "/web/base/css/定位.md",
+            "/web/base/css/图文样式.md",
+            "/web/base/css/移动端响应式.md",
+            "/web/base/css/动画渐变.md",
           ],
         },
       ],
