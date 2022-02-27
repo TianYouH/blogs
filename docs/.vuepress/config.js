@@ -11,8 +11,9 @@ module.exports = {
         text: "前端",
         children: [
           { text: "入门", link: "/web/base/" },
+          { text: "框架", link: "/web/frame/" },
+          // { text: "React", link: "/web/react/" },
           { text: "Webpack", link: "/web/webpack/" },
-          { text: "React", link: "/web/react/" },
           { text: "设计模式", link: "/web/designMode/" },
           { text: "知识点", link: "/web/knowledge/" },
           { text: "面试题", link: "/web/issue/" },
@@ -82,17 +83,24 @@ module.exports = {
           ],
         },
       ],
-      "/web/react/": [
+      "/web/frame/": [
+        {
+          text: "Vue",
+          collapsible: true,
+          children: [
+            "/web/frame/vue/README.md",
+          ],
+        },
         {
           text: "React",
           collapsible: true,
           children: [
-            "/web/react/README.md",
-            "/web/react/环境构建.md",
-            "/web/react/HOC开发模式.md",
-            "/web/react/Hook.md",
-            "/web/react/Redux.md",
-            "/web/react/Nextjs文档.md",
+            "/web/frame/react/README.md",
+            "/web/frame/react/环境构建.md",
+            "/web/frame/react/HOC开发模式.md",
+            "/web/frame/react/Hook.md",
+            "/web/frame/react/Redux.md",
+            "/web/frame/react/Nextjs文档.md",
           ],
         },
       ],
