@@ -12,7 +12,6 @@ module.exports = {
         children: [
           { text: "入门", link: "/web/base/" },
           { text: "框架", link: "/web/frame/" },
-          // { text: "React", link: "/web/react/" },
           { text: "Webpack", link: "/web/webpack/" },
           { text: "设计模式", link: "/web/designMode/" },
           { text: "知识点", link: "/web/knowledge/" },
@@ -89,6 +88,9 @@ module.exports = {
           collapsible: true,
           children: [
             "/web/frame/vue/README.md",
+            "/web/frame/vue/选项-生命周期钩子.md",
+            "/web/frame/vue/选项-数据.md",
+            "/web/frame/vue/指令.md",
           ],
         },
         {
