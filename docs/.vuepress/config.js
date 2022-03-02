@@ -88,8 +88,9 @@ module.exports = {
           collapsible: true,
           children: [
             "/web/frame/vue/README.md",
-            "/web/frame/vue/选项-生命周期钩子.md",
             "/web/frame/vue/选项-数据.md",
+            "/web/frame/vue/选项-生命周期钩子.md",
+            "/web/frame/vue/实例方法-事件.md",
             "/web/frame/vue/指令.md",
           ],
         },
