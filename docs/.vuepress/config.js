@@ -91,6 +91,7 @@ module.exports = {
             "/web/frame/vue/选项-数据.md",
             "/web/frame/vue/选项-生命周期钩子.md",
             "/web/frame/vue/实例方法-事件.md",
+            "/web/frame/vue/实例方法-生命周期.md",
             "/web/frame/vue/指令.md",
           ],
         },
