@@ -215,6 +215,7 @@ module.exports = {
           text: "Algorithm",
           collapsible: true,
           children: ["/data/algorithm/README.md"],
+          children: ["/data/algorithm/diff.md"],
         },
       ],
       "/dev/debug/": [
