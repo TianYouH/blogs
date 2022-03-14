@@ -2,22 +2,35 @@
 
 ## 什么是MVC?
 
-<img :src="$withBase('/image/web/software-architecture-patterns/MVC1.jpg')" alt="示例">
-
 `MVC（Model–View–Controller）`是最常见的客户端软件架构之一，它历史悠久，简单好用，易于理解.
 
-MVC全名是Model View Controller，是模型(model)－视图(view)－控制器(controller)的缩写，一种软件设计典范，用一种业务逻辑、数据、界面显示分离的方法组织代码，将业务逻辑聚集到一个部件里面，在改进和个性化定制界面及用户交互的同时，不需要重新编写业务逻辑。MVC被独特的发展起来用于映射传统的输入、处理和输出功能在一个逻辑的图形化用户界面的结构.
+前端的MVC与后端类似，具备着View、Controller和Model
 
-在 MVC 里面，Model 是数据模型；View 是视图或者说就是我们的软件界面需要去展示的东西；Controller 是用来控制Model的读取、存储，以及如何在 View上 展示数据，更新数据的逻辑控制器。
+- Model 负责保存应用数据、与后端数据进行同步。
+- View  负责视图展示，将 Model 中的数据可视化出来。
+- Controller 负责业务逻辑，根据用户行为对 Model 数据进行修改。
 
-## MVC三者之间的联系
+三者形成了一个如图所示的模型：
 
-- View 传送指令到 Controller
-- Controller 完成业务逻辑后，要求 Model 改变状态
-- Model 将新的数据发送到 View，用户得到反馈
+<img :src="$withBase('/image/web/software-architecture-patterns/MVC1.png')" alt="示例">
 
-所有通信都是单向的。View和Model之间的通信是通过Controller来作为桥梁的，也就是说View和Model并不是直接通信；  
-需要服务器端配合，JavaScript可以在前端修改服务器渲染后的数据，所有通信都是单向的，提交一次反馈一次，通信一次相互制约。
+这样的模型，在理论上是可行的。但往往在实际开发中，并不会这样操作。因为开发过程并不灵活。例如，一个小小的事件操作，都必须经过这样的一个流程，那么开发就不再便捷了。
+
+在实际场景中，我们往往会看到另一种模式，如图：
+
+<img :src="$withBase('/image/web/software-architecture-patterns/MVC2.png')" alt="示例">
+
+这种模式在开发中更加的灵活，backbone.js框架就是这种的模式。
+
+但是，这种灵活可能导致严重的问题:
+
+1. 数据流混乱。如下图:
+
+<img :src="$withBase('/image/web/software-architecture-patterns/MVC3.png')" alt="示例">
+
+2. View比较庞大，而Controller比较单薄:由于很多的开发者都会在view中写一些逻辑代码，逐渐的就导致view中的内容越来越庞大，而controller变得越来越单薄。
+
+既然有缺陷，就会有变革。前端的变化中，似乎少了MVP的这种模式，是因为Angular早早地将MVVM框架模式带入了前端。MVP模式虽然前端开发并不常见，但是在安卓等原生开发中，开发者还是会考虑到它。
 
 ## MVC的优缺点缺点
 

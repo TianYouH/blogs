@@ -2,11 +2,11 @@
 
 ## 什么是MVP?
 
-<img :src="$withBase('/image/web/software-architecture-patterns/MVP1.jpg')" alt="示例">
-
 `MVP（Model-View-Presenter）`是MVC的改良模式，由IBM的子公司Taligent提出。和MVC的相同之处在于：Controller/Presenter负责业务逻辑，Model管理数据，View负责显示只不过是将 Controller 改名为 Presenter，同时改变了通信方向。
 
-## MVP的特点
+MVP与MVC很接近，P指的是Presenter，presenter可以理解为一个中间人，它负责着View和Model之间的数据流动，防止View和Model之间直接交流。我们可以看一下图示:
+
+<img :src="$withBase('/image/web/software-architecture-patterns/MVP1.jpg')" alt="示例">
 
 M、V、P之间双向通信。  
 View 与 Model 不通信，都通过 Presenter 传递。Presenter完全把Model和View进行了分离，主要的程序逻辑在Presenter里实现。  

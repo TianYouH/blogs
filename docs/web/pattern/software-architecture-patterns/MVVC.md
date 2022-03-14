@@ -6,8 +6,6 @@
 
 `MVVM（Model–View–Viewmodel）`
 
-## MVVM涉及到的概念？  
-
 - M(odel)层：模型，定义数据结构。  
 - C(ontroller)层：实现业务逻辑，数据的增删改查。在MVVM模式中一般把C层算在M层中，（只有在理想的双向绑定模式下，Controller 才会完全的消失。这种理想状态一般不存在）  
 - ViewModel层：顾名思义是视图View的模型、映射和显示逻辑（如if for等，非业务逻辑），另外绑定器也在此层。  ViewModel是基于视图开发的一套模型，如果你的应用是给盲人用的，那么也可以开发一套基于Audio的模型AudioModel。  
