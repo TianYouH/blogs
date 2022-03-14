@@ -94,6 +94,7 @@ module.exports = {
             "/web/frame/vue/实例方法-事件.md",
             "/web/frame/vue/实例方法-生命周期.md",
             "/web/frame/vue/指令.md",
+            "/web/frame/vue/模板编译.md",
           ],
         },
         {
