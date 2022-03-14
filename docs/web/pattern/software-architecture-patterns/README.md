@@ -36,3 +36,5 @@
 - MVP模式在是MC的进化形式,Presenter作为中间层负责MV通信，解决了两者耦合问题，但P层过于臃肿会导致维护问题。
 - MWVM模式在前端领域有广泛应用，它不仅解决MNV耦合问题，还同时解决了维护两者映射关系的大量繁杂代码和DOM操作代码，在提高开发效率、可读性同时还保持了优越的性能表现。
 
+> ref:  
+> [https://www.bilibili.com/video/BV137411N7aB](https://www.bilibili.com/video/BV137411N7aB)
