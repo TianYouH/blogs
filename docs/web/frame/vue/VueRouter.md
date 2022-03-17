@@ -29,6 +29,20 @@ location.hash // '#初次渲染过程'
 - hash 变化不会刷新页面，SPA 必需的特点
 - hash 永远不会提交到 server 端
 
+缺点：
+- 它在 SEO 中确实有不好的影响
+
+```js
+import { createRouter, createWebHashHistory } from 'vue-router'
+
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes: [
+    //...
+  ],
+})
+```
+
 相关API:
 
 [window.onhashchange](https://developer.mozilla.org/zh-CN/docs/Web/API/WindowEventHandlers/onhashchange)
@@ -54,6 +68,17 @@ location.href = '#/vue/custom-v-model'
 ### HTML5 模式（History）
 
 使用 url 规范的路由，但在跳转时不刷新页面
+
+```js
+import { createRouter, createWebHistory } from 'vue-router'
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes: [
+    //...
+  ],
+})
+```
 
 该模式需要[后端支持](https://router.vuejs.org/zh/guide/essentials/history-mode.html#%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E7%A4%BA%E4%BE%8B)
 
