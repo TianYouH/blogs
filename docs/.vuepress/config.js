@@ -96,6 +96,7 @@ module.exports = {
             "/web/frame/vue/指令.md",
             "/web/frame/vue/模板编译.md",
             "/web/frame/vue/渲染和更新.md",
+            "/web/frame/vue/VueRouter.md",
           ],
         },
         {
