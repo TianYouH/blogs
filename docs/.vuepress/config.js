@@ -70,7 +70,7 @@ module.exports = {
             "/web/base/css/布局.md",
             "/web/base/css/定位.md",
             "/web/base/css/图文样式.md",
-            "/web/base/css/移动端响应式.md",
+            "/web/base/css/响应式.md",
             "/web/base/css/动画渐变.md",
           ],
         },
