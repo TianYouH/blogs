@@ -228,6 +228,7 @@ module.exports = {
           children: [
               "/dev/debug/README.md",
               "/dev/debug/whistle.md",
+              "/dev/debug/fiddler.md",
         ],
         },
       ],
