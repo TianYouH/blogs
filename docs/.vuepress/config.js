@@ -172,6 +172,7 @@ module.exports = {
             "/web/knowledge/常用工具函数.md",
             "/web/knowledge/性能优化.md",
             "/web/knowledge/运行环境.md",
+            "/web/knowledge/模块加载.md",
           ],
         },
       ],
