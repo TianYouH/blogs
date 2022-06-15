@@ -13,7 +13,6 @@ module.exports = {
           { text: "入门", link: "/web/base/" },
           { text: "框架", link: "/web/frame/" },
           { text: "Webpack", link: "/web/webpack/" },
-          // { text: "设计模式", link: "/web/designMode/" },
           { text: "模式", link: "/web/pattern/" },
           { text: "知识点", link: "/web/knowledge/" },
           { text: "面试题", link: "/web/issue/" },
@@ -22,6 +21,7 @@ module.exports = {
       {
         text: "服务",
         children: [{ text: "Koa", link: "/server/koa/" }],
+        children: [{ text: "Java", link: "/server/java/" }],
       },
       {
         text: "数据",
