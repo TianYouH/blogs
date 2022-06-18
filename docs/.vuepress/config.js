@@ -50,7 +50,10 @@ module.exports = {
         {
           text: "HTML",
           collapsible: true,
-          children: ["/web/base/html/README.md"],
+          children: [
+            "/web/base/html/README.md",
+            "/web/base/html/常见问题.md"
+          ],
         },
         {
           text: "JavaScript",
