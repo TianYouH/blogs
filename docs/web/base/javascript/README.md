@@ -5,46 +5,20 @@ JavaScript是一种专为与网页交互而设计的脚本语言，由下列三�
 - 文档对象模型（DOM），提供访问和操作网页内容的方法和接口；
 - 浏览器对象模型（BOM），提供与浏览器交互的方法和接口；
 
+## 七种基本类型
+
+- 布尔值（`Boolean`），有 2 个值分别是：true 和 false.
+- 数字（`Number`），整数或浮点数，例如： 42 或者 3.14159。
+- 任意精度的整数 (`BigInt`) ，可以安全地存储和操作大整数，甚至可以超过数字的安全整数限制。
+- 字符串（`String`），字符串是一串表示文本值的字符序列，例如："Howdy" 。
+- 代表（`Symbol`）( 在 ECMAScript 6 中新添加的类型).。一种实例是唯一且不可改变的数据类型。
+- 对象（`Object`、`Array`）。
+- null ， 一个表明 null 值的特殊关键字。 JavaScript 是大小写敏感的，因此 null 与 Null、NULL或变体完全不同。
+- undefined ，和 null 一样是一个特殊的关键字，undefined 表示变量未赋值时的属性。
+
 ## 变量类型和计算
 
-1. 值类型
-
-值类型(基本类型)：字符串（String）、数字(Number)、布尔(Boolean)、对空（Null）、未定义（Undefined）、Symbol。
-
-```js
-let a = 100;
-let b = a;
-a = 200;
-console.log(b); // 100
-
-// 常见的值类型
-let a; // undefined
-const s = "abc";
-const n = 100;
-const b = true;
-const s = Symbol("s");
-```
-
-2. 引用类型
-
-引用数据类型：对象(Object)、数组(Array)、函数(Function)。
-
-```js
-let a = { age: 20 };
-let b = a;
-b.age = 21;
-console.log(a.age); // 21
-
-// 常见引用类型
-const obj = { x: 100 };
-const arr = ["a", "b", "c "];
-const n = null; // 特殊引用类型，指针指向为空地址
-
-// 特殊引用类型，但不用于存储数据，所以没有“拷贝、复制函数"这一说，也可做为第三种函数类型
-function fn() {}
-```
-
-3. typeof 运算符
+1. typeof 运算符
 
 ```js
 /*
@@ -52,15 +26,21 @@ function fn() {}
  *识别函数
  *判断是否是引用类型（不可再细分)
 */
-typeof []
-'object'
-typeof function() {}
-'function'
-typeof ''
-'string'
+typeof "Bill"              // 返回 "string"
+typeof 3.14                // 返回 "number"
+typeof true                // 返回 "boolean"
+typeof false               // 返回 "boolean"
+typeof x                   // 返回 "undefined" (假如 x 没有值)
+
+typeof {name:'Bill', age:62} // 返回 "object"
+typeof null                  // 返回 "object"
+typeof [1,2,3,4]
+// 返回 "object" typeof 运算符把数组返回为 "object"，因为在 JavaScript 中数组即对象。
+
+typeof function myFunc(){}   // 返回 "function"
 ```
 
-4. 字符串拼接
+2. 字符串拼接
 
 ```js
 const a = 100 + 10; //110
@@ -69,7 +49,7 @@ const b = "10" + 140; // '10140'
 const c = true + "10"; // 'true10'
 ```
 
-5. == 运算符
+3. == 运算符
 
 ```js
 100 == "100"; // true
@@ -86,7 +66,7 @@ if (obj.a == null) {
 // if (obj.a === null || obj.a === undefined) { }
 ```
 
-6. if 语句和逻辑运算
+4. if 语句和逻辑运算
 
 ```text
 truly变量: !!a === true的变量
@@ -102,7 +82,7 @@ console.log(!window.abc); // true
 ## 异步和单线程
 
 ```text
-基于JS是单线程语言;
+JS是单线程语言;
 异步不会阻塞代码执行;
 同步会阻塞代码执行;
 

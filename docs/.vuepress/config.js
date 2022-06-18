@@ -63,6 +63,7 @@ module.exports = {
             "/web/base/javascript/原型到原型链.md",
             "/web/base/javascript/继承的多种方式和优缺点.md",
             "/web/base/javascript/作用域和闭包.md",
+            "/web/base/javascript/常见问题.md",
           ],
         },
         {
