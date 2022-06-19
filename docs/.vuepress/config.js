@@ -278,9 +278,12 @@ module.exports = {
       ],
       "/dev/linux/": [
         {
-          text: "Linux",
+          text: "Shell",
           collapsible: true,
-          children: ["/dev/linux/README.md"],
+          children: [
+            "/dev/linux/shell/README.md",
+            "/dev/linux/shell/常用命令.md",
+          ],
         },
       ],
       "/dev/vscode/": [
