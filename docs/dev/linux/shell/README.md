@@ -134,6 +134,60 @@ sh vars.sh aa 99 cc
 
 bash（解释器）内置变量，可以调用但是不能赋值或修改
 
+- 用来保存脚本程序的执行信息
+  - 直接使用这些变量
+  - 不能直接为这些变量赋值
+
+| 变量名 | 含义 |
+| :-: | :-: |
+|$?|*上一条*命令执行后的返回状态，0：正常，[不等于0]：表示异常|
+|$0|当前所在的进程或脚本名|
+|$$|当前运行进程的PID号|
+|$#|已加载的位置变量的个数|
+|$*|所有位置变量的值|
+
+### 变量的扩展应用
+
+#### 多种引号的区别
+
+- 区分三种定界符
+  - 双引号""：允许扩展，以$引用其它变量
+  - 单引号''：禁用扩展，即便$也视为普通字符
+  - 反引号``：将命令的执行输出作为变量值，$()与反引号等效
+
+```bash
+echo "$USER id is $UID"
+#root id is 0
+
+echo '$USER id is $UID'
+#$USER id is $UID
+
+a=`ls` #a=$(ls)
+echo a
+#CNAME data.json deploy.sh docs logo.png node_modules package.json package-lock.json test 我的博客.xmind
+```
+
+#### read标准输入取值
+
+- read从键盘读入变量值完成赋值
+  - 格式：`read -p "提示信息" 变量名`
+  - -p 可选（提示文字），-t 指定超时秒数，-s 设置是否在终端显示输入内容
+
+下方有示例
+
+### 局部与全局
+
+变量的作用范围
+
+- 局部变量
+  - 新定义的变量默认只在当前Shell环境中有效，无法在子Shell环境中使用
+- 全局变量
+  - 全局变量在当前Shell及子Shell环境中均有效
+
+```bash
+a=123 #定义局部变量
+export b=456 #定义全局变量
+```
 
 ## 运算
 
@@ -160,4 +214,18 @@ user.sh
 useradd "$1"
 
 echo "$2" | passwd --stdin $1
+```
+
+### read标准输入取值
+
+read.sh
+```bash
+#!/bin/bash
+# 新增用户并修改密码
+
+read -p "请输入用户名：" name
+read -t 6 -s -p "请输入密码：" pass
+
+useradd "$name" #加引号防止用户输入空格，如 "huang jin"
+echo "$pass" | passwd --stdin $name
 ```
