@@ -191,6 +191,67 @@ export b=456 #定义全局变量
 
 ## 运算
 
+### 基本运算法则（整数）
+
+- 使用$[]或$(())表达式进行运算
+  - 格式：$[数字2 + 数字2 ...]
+
+- 四则运算
+  - 加法：num1 + num2
+  - 减法：num1 - num2
+  - 乘法：num1 * num2
+  - 除法：num1 / num2
+- 取余：num1 % num2
+
+```bash
+echo $[1+2] #3
+echo $((1+2)) #3
+a=2;b=3
+echo $[a*b] #6
+```
+
+### 变量的自增/减等操作
+
+|简写表达式|完整表达式|
+|:-:|:-:|
+|i++|i=i+1|
+|i+=2|i=i+2|
+|i-=2|i=i-2|
+|i*=2|i=i*2|
+|i/=2|i=i/2|
+|i%=2|i=i%2|
+
+### 命令：let
+
+let 命令是 BASH 中用于计算的工具，用于执行一个或多个表达式，变量计算中不需要加上 $ 来表示变量。如果表达式中包含了空格或其他特殊字符，则必须引起来。
+
+```bash
+let a=5+4
+let b=9-3 
+echo $a $b
+```
+
+### bc计算器（扩展：小数）
+
+Bash内建机制仅支持整数运算，不支持小数运算
+```bash
+$ echo $[1.1+1.5]
+#bash: 1.1+1.5: syntax error: invalid arithmetic operator (error token is ".1+1.5")
+```
+
+需要通过计算器软件bc实现小数运算
+- 如果没有该软件需要使用yum安装
+- bc支持交互式和非交互式两种方式计算，scale=n可以约束小数位
+- bc支持的比较符：>、>=、<、<=、==、!=，表达式成立返回1，否则返回0
+
+```bash
+echo "1.3*2.4" | bc #3.12
+echo "1>2" | bc #0
+bc
+1.5+2.4 #3.9
+quit
+```
+
 ## 示例
 
 ### 第一个Shell脚本
@@ -228,4 +289,75 @@ read -t 6 -s -p "请输入密码：" pass
 
 useradd "$name" #加引号防止用户输入空格，如 "huang jin"
 echo "$pass" | passwd --stdin $name
+```
+
+### 监控脚本之显示硬件信息
+
+check.sh
+```bash
+#!/bin/bash
+# 查询硬件信息
+
+echo -e "\033[34m----服务器硬件信息----\033[0m"
+
+echo -e "\033[34m----网卡信息----\033[0m"
+ifconfig ens33 | grep "inet "
+
+echo -e "\033[34m----内存的剩余容量信息：----\033[0m"
+grep MemAvailable /proc/meminfo
+
+echo -e "\033[34m----磁盘根分区的使用情况：----\033[0m"
+df -h /
+
+echo -e "\033[34m----本机CPU型号信息如下：----\033[0m"
+grep "model name" /proc/cpuinfo
+
+exit
+```
+
+### 数据计算
+
+calc.sh
+```bash
+#!/bin/bash
+# 计算脚本
+
+# 计算1+2+3，...，+n的和，可以使用n*(n+1)/2公式快速计算结果
+read -p "请输入一个正整数：" num
+sum=$[num*(num+1)/2]
+echo -e "\033[32m$num以内的整数和是：$sum\033[0m"
+
+# 使用三角形的底边和高计算面积：A=1/2bh
+read -p "请输入三角形底边长度：" bottom
+read -p "请输入三角形高度：" hight
+A=$(echo "scale=1;1/2*$bottom*$hight" | bc)
+echo -e "\033[32m三角形的面积是：$A\033[0m"
+
+# 梯形面积：(上底边长度+下底边长度)*高/2
+read -p "请输入梯形上底边长度：" a
+read -p "请输入梯形下底边长度：" b
+read -p "请输入梯形高度：" h
+A=$(echo "scale=2;($a+$b)*$h/2" | bc)
+echo -e "\033[32m梯形的面积是：$A\033[0m"
+
+# 使用A=πr2公式计算圆的面积，取2位小数点精度，π=3.14
+read -p "请输入圆的半径：" r
+A=$(echo "scale=2;3.14*$r^2" | bc)
+echo -e "\033[32m圆的面积是：$A\033[0m"
+```
+
+### 配置YUM源脚本
+
+```bash
+#!/bin/bash
+# 配置YUM文件脚本
+
+# 定义YUM源路径
+URL=ftp://192.168.0.1/centos # 路径是瞎写的
+
+# 创建YUM源配置文件
+echo "[CentOS]
+name=centos
+baseurl=$URL
+gpgcheck=0" > /ect/yum.repos.d/iyum.repo
 ```
