@@ -282,6 +282,7 @@ module.exports = {
           collapsible: true,
           children: [
             "/dev/linux/shell/README.md",
+            "/dev/linux/shell/判断和循环.md",
             "/dev/linux/shell/常用命令.md",
           ],
         },
