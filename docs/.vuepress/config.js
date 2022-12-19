@@ -16,12 +16,14 @@ module.exports = {
           { text: "模式", link: "/web/pattern/" },
           { text: "知识点", link: "/web/knowledge/" },
           { text: "面试题", link: "/web/issue/" },
-        ]
+        ],
       },
       {
         text: "服务",
-        children: [{ text: "Koa", link: "/server/koa/" }],
-        children: [{ text: "Java", link: "/server/java/" }],
+        children: [
+          { text: "Koa", link: "/server/koa/" },
+          { text: "Java", link: "/server/java/" },
+        ],
       },
       {
         text: "数据",
@@ -50,10 +52,7 @@ module.exports = {
         {
           text: "HTML",
           collapsible: true,
-          children: [
-            "/web/base/html/README.md",
-            "/web/base/html/常见问题.md"
-          ],
+          children: ["/web/base/html/README.md", "/web/base/html/常见问题.md"],
         },
         {
           text: "JavaScript",
@@ -81,10 +80,7 @@ module.exports = {
         {
           text: "WebApi",
           collapsible: true,
-          children: [
-            "/web/base/webapi/README.md",
-            "/web/base/webapi/Ajax.md"
-          ],
+          children: ["/web/base/webapi/README.md", "/web/base/webapi/Ajax.md"],
         },
       ],
       "/web/frame/": [
@@ -222,8 +218,7 @@ module.exports = {
         {
           text: "Algorithm",
           collapsible: true,
-          children: ["/data/algorithm/README.md"],
-          children: ["/data/algorithm/diff.md"],
+          children: ["/data/algorithm/README.md", "/data/algorithm/diff.md"],
         },
       ],
       "/dev/debug/": [
@@ -231,20 +226,17 @@ module.exports = {
           text: "Debug",
           collapsible: true,
           children: [
-              "/dev/debug/README.md",
-              "/dev/debug/whistle.md",
-              "/dev/debug/fiddler.md",
-        ],
+            "/dev/debug/README.md",
+            "/dev/debug/whistle.md",
+            "/dev/debug/fiddler.md",
+          ],
         },
       ],
       "/dev/test/": [
         {
           text: "Test",
           collapsible: true,
-          children: [
-              "/dev/test/README.md",
-              "/dev/test/Chaijs.md",
-            ],
+          children: ["/dev/test/README.md", "/dev/test/Chaijs.md"],
         },
       ],
       "/dev/git/": [
@@ -252,11 +244,11 @@ module.exports = {
           text: "Git",
           collapsible: true,
           children: [
-              "/dev/git/README.md",
-              "/dev/git/Git-钩子拦截配置.md",
-              "/dev/git/Git规范提交库和Git-Change-log生成库.md",
-              "/dev/git/gitignore无效解决.md",
-            ],
+            "/dev/git/README.md",
+            "/dev/git/Git-钩子拦截配置.md",
+            "/dev/git/Git规范提交库和Git-Change-log生成库.md",
+            "/dev/git/gitignore无效解决.md",
+          ],
         },
       ],
       "/dev/network/": [
@@ -264,16 +256,16 @@ module.exports = {
           text: "Network",
           collapsible: true,
           children: [
-              "/dev/network/README.md",
-              "/dev/network/OSI.md",
-              "/dev/network/HTTP.md",
-              "/dev/network/TCP.md",
-              "/dev/network/UDP.md",
-              "/dev/network/HTTPS.md",
-              "/dev/network/HTTP状态码.md",
-              "/dev/network/Websocket.md",
-              "/dev/network/域名后缀记录.md",
-            ],
+            "/dev/network/README.md",
+            "/dev/network/OSI.md",
+            "/dev/network/HTTP.md",
+            "/dev/network/TCP.md",
+            "/dev/network/UDP.md",
+            "/dev/network/HTTPS.md",
+            "/dev/network/HTTP状态码.md",
+            "/dev/network/Websocket.md",
+            "/dev/network/域名后缀记录.md",
+          ],
         },
       ],
       "/dev/linux/": [
@@ -310,10 +302,7 @@ module.exports = {
         {
           text: "Mock",
           collapsible: true,
-          children: [
-              "/dev/mock/README.md",
-              "/dev/mock/服务端Mock配置.md",
-            ],
+          children: ["/dev/mock/README.md", "/dev/mock/服务端Mock配置.md"],
         },
       ],
     },
