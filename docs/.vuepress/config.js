@@ -249,8 +249,8 @@ module.exports = {
             "/dev/git/README.md",
             "/dev/git/Git-钩子拦截配置.md",
             "/dev/git/Git规范提交库和Git-Change-log生成库.md",
-            "/dev/git/gitignore无效解决.md",
-            "/dev/git/gitFastFarward.md",
+            "/dev/git/Gitignore无效解决.md",
+            "/dev/git/GitFastFarward.md",
           ],
         },
         {
@@ -258,7 +258,8 @@ module.exports = {
           collapsible: true,
           children: [
             "/dev/git/git-flow/README.md",
-            "/dev/git/git-flow/gitFlow.md",
+            "/dev/git/git-flow/GitFlow.md",
+            "/dev/git/git-flow/GitHubFlow.md",
           ],
         },
       ],
