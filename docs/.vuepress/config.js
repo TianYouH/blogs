@@ -259,7 +259,7 @@ module.exports = {
           children: [
             "/dev/git/git-flow/README.md",
             "/dev/git/git-flow/GitFlow.md",
-            "/dev/git/git-flow/GitHubFlow.md",
+            "/dev/git/git-flow/GithubFlow.md",
           ],
         },
       ],
