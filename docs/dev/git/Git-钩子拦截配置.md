@@ -107,8 +107,10 @@ npx --no-install commitlint --edit "$1"
     - commit-msg 📄
     - pre-commit 📄
 
-## 参考文档
-
-- [husky](https://typicode.github.io/husky/#/?id=features)
-- [husky使用总结](https://zhuanlan.zhihu.com/p/366786798)
-- [lint-staged](https://www.npmjs.com/package/lint-staged)
+> 参考资料：
+>
+> [husky](https://typicode.github.io/husky/#/?id=features)
+>
+> [husky使用总结](https://zhuanlan.zhihu.com/p/366786798)
+>
+> [lint-staged](https://www.npmjs.com/package/lint-staged)
