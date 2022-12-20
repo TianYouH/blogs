@@ -1,9 +1,11 @@
+import { defaultTheme } from "@vuepress/theme-default";
+
 module.exports = {
   base: "/",
   title: "你好世界",
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   description: "这是我的博客",
-  themeConfig: {
+  theme: defaultTheme({
     lastUpdatedText: "最后更新时间", // string | boolean
     contributorsText: "贡献者",
     navbar: [
@@ -248,6 +250,15 @@ module.exports = {
             "/dev/git/Git-钩子拦截配置.md",
             "/dev/git/Git规范提交库和Git-Change-log生成库.md",
             "/dev/git/gitignore无效解决.md",
+            "/dev/git/gitFastFarward.md",
+          ],
+        },
+        {
+          text: "Git工作流程",
+          collapsible: true,
+          children: [
+            "/dev/git/git-flow/README.md",
+            "/dev/git/git-flow/gitFlow.md",
           ],
         },
       ],
@@ -306,5 +317,5 @@ module.exports = {
         },
       ],
     },
-  },
+  }),
 };
