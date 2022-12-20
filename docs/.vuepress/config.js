@@ -260,6 +260,7 @@ module.exports = {
             "/dev/git/git-flow/README.md",
             "/dev/git/git-flow/GitFlow.md",
             "/dev/git/git-flow/GithubFlow.md",
+            "/dev/git/git-flow/GitlabFlow.md",
           ],
         },
       ],
