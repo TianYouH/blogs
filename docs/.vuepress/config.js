@@ -225,7 +225,7 @@ module.exports = {
       ],
       "/dev/debug/": [
         {
-          text: "Debug",
+          text: "接口抓包",
           collapsible: true,
           children: [
             "/dev/debug/README.md",
@@ -233,6 +233,14 @@ module.exports = {
             "/dev/debug/fiddler.md",
           ],
         },
+        {
+          text: "接口管理",
+          collapsible: true,
+          children: [
+            "/dev/debug/api/README.md",
+            "/dev/debug/api/yapi.md",
+          ],
+        }
       ],
       "/dev/test/": [
         {
