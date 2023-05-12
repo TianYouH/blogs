@@ -239,6 +239,7 @@ module.exports = {
           children: [
             "/dev/debug/api/README.md",
             "/dev/debug/api/yapi.md",
+            "/dev/debug/api/yapi安装及运维.md",
             "/dev/debug/api/yapi自动化测试.md",
           ],
         }
