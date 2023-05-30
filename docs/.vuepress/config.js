@@ -25,6 +25,7 @@ module.exports = {
         children: [
           { text: "Koa", link: "/server/koa/" },
           { text: "Java", link: "/server/java/" },
+          { text: "Python", link: "/server/python/" },
         ],
       },
       {
@@ -203,6 +204,13 @@ module.exports = {
           text: "Koa",
           collapsible: true,
           children: ["/server/koa/README.md"],
+        },
+      ],
+      "/server/python/": [
+        {
+          text: "Python",
+          collapsible: true,
+          children: ["/server/python/README.md"],
         },
       ],
       "/data/redis/": [
