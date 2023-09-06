@@ -64,3 +64,13 @@
     1. 行注释 每行注释前加#号。
     2. 段注释 使用三个连续单引号（'''）。
 
+```python
+import turtle
+t = turtle.Pen()
+for x in range(360):
+    t.forward(x)
+    t.left(59) #你好世界
+'''
+sdds
+'''
+```
