@@ -208,9 +208,14 @@ module.exports = {
       ],
       "/server/python/": [
         {
-          text: "Python",
+          text: "Python简介",
           collapsible: true,
           children: ["/server/python/README.md"],
+        },
+        {
+          text: "Python环境配置",
+          collapsible: true,
+          children: ["/server/python/Python环境配置.md"],
         },
       ],
       "/data/redis/": [

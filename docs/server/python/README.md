@@ -4,7 +4,7 @@
 
 Python 是一种解释型、面向对象、动态数据类型的高级程序设计语言。
 
-Python 由 吉多-范罗苏姆（Guido van Rossum） 于 1989 年底发明，第一个公开发行版发行于 1991 年。
+Python 由 吉多-范罗苏姆（Guido van Rossum、龟叔） 于 1989 年底发明，第一个公开发行版发行于 1991 年。
 
 像 Perl 语言一样, Python 源代码同样遵循 GPL(GNU General Public License) 协议。
 
@@ -33,9 +33,13 @@ Python会被编译成与操作系统相关的二进制代码,然后再解释执�
 6. 移动设备
 7. 嵌入式设备
 8. 系统运维
+9. 大数据
+10. 云计算
 
 ### 什么时候不应该用 Python
-Python是解释执行。性能较低。因此,一些影响性能的功能可以使用C/C++/JAVA/GO (GO是一种新语言,写起了像Python,性能像C)去开发。不过，不用担心 Python 解释器会越来越快。
+Python是解释执行。性能较低。  
+因此,一些影响性能的功能可以使用C/C++/JAVA/GO (GO是一种新语言,写起了像Python,性能像C)去开发。  
+不过，不用担心 Python 解释器会越来越快。
 
 ## Python解释器
 Python 程序的执行依赖于Python 解释器。常用的 Python 解释器有:
@@ -47,7 +51,3 @@ Python 程序的执行依赖于Python 解释器。常用的 Python 解释器有:
 平台上使用的解释器。可直接调用.NET 平台的类,适合.NET 平台上开发  
 4. PyPy  
 使用Python 语言实现的解释器
-
-
-
-
