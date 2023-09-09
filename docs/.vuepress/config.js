@@ -217,6 +217,16 @@ module.exports = {
           collapsible: true,
           children: ["/server/python/Python环境配置.md"],
         },
+        {
+          text: "Python基础概念",
+          collapsible: true,
+          children: ["/server/python/Python基础概念.md"],
+        },
+        {
+          text: "Python常用库",
+          collapsible: true,
+          children: ["/server/python/Python常用库.md"],
+        },
       ],
       "/data/redis/": [
         {
