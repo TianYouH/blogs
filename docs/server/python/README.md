@@ -132,7 +132,6 @@ Python凭借其高度流行和高效的产品（例如FreeCAD，Fandango，Pytho
 ### 什么时候不应该用 Python
 Python是解释执行。性能较低。  
 因此,一些影响性能的功能可以使用C/C++/JAVA/GO (GO是一种新语言,写起了像Python,性能像C)去开发。  
-不过，不用担心 Python 解释器会越来越快。
 
 ## Python解释器
 Python 程序的执行依赖于Python 解释器。常用的 Python 解释器有:
