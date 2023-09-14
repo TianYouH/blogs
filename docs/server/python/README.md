@@ -123,7 +123,7 @@ Plotly、Matplotlib、Seaborn、Ggplot、Geoplotlib
 
 Python凭借其高度流行和高效的产品（例如FreeCAD，Fandango，PythonCAD，Blender和VintechRCAM）征服了CAD领域。 这些应用程序提供了行业标准的功能，例如宏录制，工作台，机器人模拟，草绘器，对多格式文件导入/导出的支持，技术绘图模块等等。
 
-15. CAD应用
+15. 嵌入式应用
 
 到目前为止，Python最吸引人的应用场景之一是能够在嵌入式硬件上运行。嵌入式硬件是一台微型计算机，旨在执行有限的操作。嵌入式应用程序是驱动硬件（即固件）的驱动力。这些应用程序的热门示例包括MicroPython，Zerynth，PyMite和EmbeddedPython。
 
