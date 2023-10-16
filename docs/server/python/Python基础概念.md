@@ -328,8 +328,27 @@ print(a)
 # 么
 ```
 
+#### 字符串切片 slice 操作
 
+切片操作可以快速的让我们提取子字符串。标准格式为：`[起始偏移量 start : 终止偏移量 end : 步长 step]`
+
+常规操作
+|示例|结果|说明|
+|-|-|-|
+|"abcdef"[:]|"abcdef"|提取整个字符串|
+|"abcdef"[2:]|"cdef"|从索引start索引开始到结尾|
+|"abcdef"[:2]|"ab"|从开始到索引end-1结束|
+|"abcdef"[2:4]|"cd"|从start到end-1|
+|"abcdef"[1:5:2]|"bd"|从start提取到end-1，步长是step|
+
+其它操作
+|示例|结果|说明|
+|-|-|-|
+|"abcdefghijklmnopqrstuvwxyz"[-3:]|"xyz"|倒数3个|
+|"abcdefghijklmnopqrstuvwxyz"[-8:-3]|"stuvw"|倒数第8个到到数第3个（包头不包尾）|
+|"abcdefghijklmnopqrstuvwxyz"[::-1]|"zyxwvutsrqponmlkjihgfedcba"|步长为负，从右到左反向提取|
 
 #### 常用方法
 
 1. len() - 返回字符串长度
+2. replace() - 字符串替换
