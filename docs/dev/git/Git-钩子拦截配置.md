@@ -64,6 +64,7 @@ echo 'foo: bar' | commitlint
 }
 // prepare脚本会在npm install（不带参数）之后自动执行。
 // 也就是说当我们执行npm install安装完项目依赖后会执行 husky install命令，该命令会创建.husky/目录并指定该目录为git hooks所在的目录。
+// 如果 无需执行npm install，请手动执行npm run prepare命令，完成钩子配置
 ```
 
 2. 添加git hooks，运行一下命令创建git hooks
