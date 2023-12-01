@@ -50,6 +50,8 @@ echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitl
 echo 'foo: bar' | commitlint
 ```
 
+> 如果遇见`command not found: commitlint`错误，可以尝试改为`npx commitlint`
+
 ### husky
 
 1. 在packgae.json中添加prepare脚本
