@@ -31,6 +31,7 @@ module.exports = {
       {
         text: "数据",
         children: [
+          { text: "MongoDB", link: "/data/mongodb/" },
           { text: "Redis", link: "/data/redis/" },
           { text: "Algorithm", link: "/data/algorithm/" },
         ],
