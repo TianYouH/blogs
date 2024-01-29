@@ -223,6 +223,11 @@ module.exports = {
           children: ["/server/python/Python基础概念.md"],
         },
         {
+          text: "Python内置函数",
+          collapsible: true,
+          children: ["/server/python/Python内置函数.md"],
+        },
+        {
           text: "Python常用库",
           collapsible: true,
           children: ["/server/python/Python常用库.md"],
