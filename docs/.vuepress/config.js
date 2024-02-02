@@ -233,6 +233,11 @@ module.exports = {
           collapsible: true,
           children: ["/server/python/Python常用库.md"],
         },
+        {
+          text: "Python框架scrapy", 
+          collapsible: true,
+          children: ["/server/python/Python框架scrapy.md"],
+        },
       ],
       "/data/redis/": [
         {
