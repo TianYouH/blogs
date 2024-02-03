@@ -4,3 +4,18 @@
 
 海龟绘图最初是作为一种教学工具被创建的，供教师在课堂上使用。 对于需要生成一些图形输出的程序员来说这是一种无需在工作中引入更高复杂度或外部库的方式。
 
+# pip包管理器常用命令
+
+requirements.txt 文件清单。一般接手新的python都会根据项目中该文件清单拉取依赖
+
+获取当前环境安装依赖  
+`pip list` 或者 `pip freeze`
+
+创建依当前环境依赖清单
+`pip freeze > requirements.txt`
+
+根据文件清单安装依赖  
+`pip install -r requirements.txt`
+
+
+
