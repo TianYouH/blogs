@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-337f8ed9","path":"/web/issue/%E4%B8%9A%E5%8A%A1.html","title":"业务","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1626777029000,"contributors":[{"name":"DESKTOP-ER5718D\\\\zt","email":"huangjinliang@zto.com","commits":2}]},"filePathRelative":"web/issue/业务.md"}');export{e as data};

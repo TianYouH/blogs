@@ -1,0 +1,1 @@
+import{_ as t,p as a,q as n,R as e,t as s}from"./framework-8fa3e4ce.js";const c={},o=e("h1",{id:"github",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#github","aria-hidden":"true"},"#"),s(" github")],-1),i=e("p",null,"用于整理 github 相关问题解决",-1),r=[o,i];function _(d,h){return a(),n("div",null,r)}const u=t(c,[["render",_],["__file","index.html.vue"]]);export{u as default};

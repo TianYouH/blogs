@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-579d15fa","path":"/server/java/","title":"Java（爪瓦）","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1655285206000,"contributors":[{"name":"DESKTOP-ER5718D\\\\zt","email":"huangjinliang@zto.com","commits":1}]},"filePathRelative":"server/java/README.md"}');export{a as data};

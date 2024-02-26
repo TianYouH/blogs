@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-dc9c26b8","path":"/dev/git/GitFastFarward.html","title":"GitFastFarward","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1671527611000,"contributors":[{"name":"huangjinliang","email":"huang.jinliang@bitget.com","commits":2}]},"filePathRelative":"dev/git/GitFastFarward.md"}');export{t as data};

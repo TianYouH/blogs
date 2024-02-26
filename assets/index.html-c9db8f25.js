@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-987e53e0","path":"/web/pattern/design-mode/","title":"设计模式","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1646658682000,"contributors":[{"name":"DESKTOP-ER5718D\\\\zt","email":"huangjinliang@zto.com","commits":1}]},"filePathRelative":"web/pattern/design-mode/README.md"}');export{e as data};

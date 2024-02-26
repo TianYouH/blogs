@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6fcc4776","path":"/web/knowledge/","title":"知识点","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1626690926000,"contributors":[{"name":"DESKTOP-ER5718D\\\\zt","email":"huangjinliang@zto.com","commits":1}]},"filePathRelative":"web/knowledge/README.md"}');export{e as data};

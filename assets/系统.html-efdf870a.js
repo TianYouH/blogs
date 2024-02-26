@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-75974bd1","path":"/web/issue/%E7%B3%BB%E7%BB%9F.html","title":"系统","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1626777029000,"contributors":[{"name":"DESKTOP-ER5718D\\\\zt","email":"huangjinliang@zto.com","commits":2}]},"filePathRelative":"web/issue/系统.md"}');export{e as data};

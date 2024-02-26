@@ -1,0 +1,1 @@
+import{_ as t,p as a,q as s,R as e,t as c}from"./framework-8fa3e4ce.js";const n={},r=e("h1",{id:"shell-基础总结",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#shell-基础总结","aria-hidden":"true"},"#"),c(" Shell 基础总结")],-1),o=[r];function l(_,d){return a(),s("div",null,o)}const i=t(n,[["render",l],["__file","index.html.vue"]]);export{i as default};

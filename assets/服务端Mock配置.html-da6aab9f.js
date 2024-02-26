@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-078ceece","path":"/dev/mock/%E6%9C%8D%E5%8A%A1%E7%AB%AFMock%E9%85%8D%E7%BD%AE.html","title":"服务端Mock配置","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1639560171000,"contributors":[{"name":"DESKTOP-ER5718D\\\\zt","email":"huangjinliang@zto.com","commits":1}]},"filePathRelative":"dev/mock/服务端Mock配置.md"}');export{e as data};

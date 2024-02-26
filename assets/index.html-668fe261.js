@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-14856100","path":"/data/redis/","title":"redis","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"安装","slug":"安装","link":"#安装","children":[]}],"git":{"updatedTime":1639574564000,"contributors":[{"name":"DESKTOP-ER5718D\\\\zt","email":"huangjinliang@zto.com","commits":1}]},"filePathRelative":"data/redis/README.md"}');export{e as data};

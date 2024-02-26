@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-c4286eec","path":"/dev/test/","title":"test","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1631691898000,"contributors":[{"name":"DESKTOP-ER5718D\\\\zt","email":"huangjinliang@zto.com","commits":1}]},"filePathRelative":"dev/test/README.md"}');export{t as data};

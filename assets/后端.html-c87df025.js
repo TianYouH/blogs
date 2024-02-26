@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-770b70c2","path":"/web/issue/%E5%90%8E%E7%AB%AF.html","title":"后端","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1626777029000,"contributors":[{"name":"DESKTOP-ER5718D\\\\zt","email":"huangjinliang@zto.com","commits":2}]},"filePathRelative":"web/issue/后端.md"}');export{e as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-48c81584","path":"/web/issue/%E8%AF%AD%E6%B3%95.html","title":"语法","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1626777029000,"contributors":[{"name":"DESKTOP-ER5718D\\\\zt","email":"huangjinliang@zto.com","commits":2}]},"filePathRelative":"web/issue/语法.md"}');export{e as data};

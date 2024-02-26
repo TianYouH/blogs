@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-15087768","path":"/web/issue/%E6%8F%92%E4%BB%B6.html","title":"插件","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1626777029000,"contributors":[{"name":"DESKTOP-ER5718D\\\\zt","email":"huangjinliang@zto.com","commits":2}]},"filePathRelative":"web/issue/插件.md"}');export{e as data};
