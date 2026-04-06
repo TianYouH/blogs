@@ -38,6 +38,16 @@ export default {
         ],
       },
       {
+        text: "AI",
+        children: [
+          { text: "AI 概述", link: "/ai/overview/" },
+          { text: "机器学习", link: "/ai/machine-learning/" },
+          { text: "深度学习", link: "/ai/deep-learning/" },
+          { text: "自然语言处理", link: "/ai/nlp/" },
+          { text: "关键词说明", link: "/ai/keywords/" },
+        ],
+      },
+      {
         text: "开发",
         children: [
           { text: "调试", link: "/dev/debug/" },
@@ -361,6 +371,33 @@ export default {
           text: "Mock",
           collapsible: true,
           children: ["/dev/mock/README.md", "/dev/mock/服务端Mock配置.md"],
+        },
+      ],
+      "/ai/": [
+        {
+          text: "AI 概述",
+          collapsible: true,
+          children: ["/ai/overview/README.md"],
+        },
+        {
+          text: "机器学习",
+          collapsible: true,
+          children: ["/ai/machine-learning/README.md"],
+        },
+        {
+          text: "深度学习",
+          collapsible: true,
+          children: ["/ai/deep-learning/README.md"],
+        },
+        {
+          text: "自然语言处理",
+          collapsible: true,
+          children: ["/ai/nlp/README.md"],
+        },
+        {
+          text: "关键词说明",
+          collapsible: true,
+          children: ["/ai/keywords/README.md"],
         },
       ],
     },
