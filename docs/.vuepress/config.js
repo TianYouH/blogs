@@ -1,11 +1,14 @@
-import { defaultTheme } from "@vuepress/theme-default";
+import { defaultTheme } from '@vuepress/theme-default';
+import { viteBundler } from '@vuepress/bundler-vite';
 
-module.exports = {
+export default {
   base: "/",
   title: "你好世界",
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   description: "这是我的博客",
-  theme: defaultTheme({
+  theme: defaultTheme,
+  bundler: viteBundler(),
+  themeConfig: {
     lastUpdatedText: "最后更新时间", // string | boolean
     contributorsText: "贡献者",
     navbar: [
@@ -363,5 +366,5 @@ module.exports = {
         },
       ],
     },
-  }),
+  },
 };
