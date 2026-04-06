@@ -6,9 +6,7 @@ export default {
   title: "你好世界",
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   description: "这是我的博客",
-  theme: defaultTheme,
-  bundler: viteBundler(),
-  themeConfig: {
+  theme: defaultTheme({
     lastUpdatedText: "最后更新时间", // string | boolean
     contributorsText: "贡献者",
     navbar: [
@@ -366,5 +364,6 @@ export default {
         },
       ],
     },
-  },
+  }),
+  bundler: viteBundler(),
 };
