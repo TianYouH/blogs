@@ -45,6 +45,7 @@ export default {
           { text: "深度学习", link: "/ai/deep-learning/" },
           { text: "自然语言处理", link: "/ai/nlp/" },
           { text: "关键词说明", link: "/ai/keywords/" },
+          { text: "使用技巧", link: "/ai/tips/" },
         ],
       },
       {
@@ -398,6 +399,11 @@ export default {
           text: "关键词说明",
           collapsible: true,
           children: ["/ai/keywords/README.md"],
+        },
+        {
+          text: "使用技巧",
+          collapsible: true,
+          children: ["/ai/tips/README.md"],
         },
       ],
     },
