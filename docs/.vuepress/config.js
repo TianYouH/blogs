@@ -46,6 +46,7 @@ export default {
           { text: "自然语言处理", link: "/ai/nlp/" },
           { text: "关键词说明", link: "/ai/keywords/" },
           { text: "使用技巧", link: "/ai/tips/" },
+          { text: "本地模型安装及下载", link: "/ai/local-models/" },
         ],
       },
       {
@@ -404,6 +405,11 @@ export default {
           text: "使用技巧",
           collapsible: true,
           children: ["/ai/tips/README.md"],
+        },
+        {
+          text: "本地模型安装及下载",
+          collapsible: true,
+          children: ["/ai/local-models/README.md"],
         },
       ],
     },
