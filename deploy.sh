@@ -14,6 +14,7 @@ cp -r ../../../.github ./
 cp -r ../../../CNAME ./
 
 git init
+git checkout -b master
 git add -A
 git commit -m 'deploy'
 
